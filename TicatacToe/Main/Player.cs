@@ -8,7 +8,7 @@ namespace Main
 {
     internal class Player 
     {
-        public string Name { get; set; }
+        public string Name { get; set; } 
 
         public readonly string Symbol;
 
@@ -16,6 +16,12 @@ namespace Main
         {
             Name =  name;
             Symbol = symbol;
+        }
+
+        //overload 
+        public Player(string symbol)
+        {
+            Name = symbol;
         }
 
     }

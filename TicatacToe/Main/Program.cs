@@ -7,6 +7,15 @@ using System.Threading;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
+
+//constructor im Board für Board class wo alles zügs macht im Board zb DICT erstelle
+//Player cload en overload für de constructor
+//clean everything
+//logik aufgaben aufteilen
+
+//Fieldclassene erstellen
+//bool richtig bennenen zb ISvalid oder isrunning
+
 namespace Main
 {
     internal class Program
@@ -17,10 +26,11 @@ namespace Main
             waitSeconds(1);
             string playerYName = getNames();
 
-            Board board = new Board();
+            GameHandler board = new GameHandler();
             Timecounter timer = new Timecounter();
             Player playerX = new Player("X",playerXName);
             Player playerO = new Player("O",playerYName);
+
             var turn = 0;
 
 
